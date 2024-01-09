@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8e1; /* Light pastel yellow background */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ffe082; /* Pastel yellow border */
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ffd54f; /* Pastel yellow background */
+            color: #ffffff; /* White text color */
+            padding: 10px 15px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffca28; /* Lighter pastel yellow on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #2196f3; /* Blue link color */
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Student Log In</h2>
+        <form id="signInForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit">Log In</button>
+            <button type="reset">Reset</button>
+
+            <div id="errorMessage" class="error-message"></div>
+        </form> 
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                document.getElementById("errorMessage").innerHTML = "Please fill in all fields.";
+                return false;
+            } else {
+                // Redirect to the specified link
+                window.location.href = "index.html";
+                return false; // Prevents the form from submitting (you can remove this line if you want the form to submit)
+            }
+        }
+    </script>
+
+</body>
+</html>

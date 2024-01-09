@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff; /* White background */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333333; /* Dark text color */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ffecb3; /* Pastel yellow background */
+            color: #333333; /* Dark text color */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #ffe082; /* Lighter pastel yellow on hover */
+        }
+
+        .register-link {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #333333; /* Dark text color */
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffecb3; /* Pastel yellow link color */
+        }
+
+        a:hover {
+            color: #ffe082; /* Lighter pastel yellow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Log In</div>
+    
+    <div class="button-container">
+        <button class="button" onclick="location.href='student_login.html'">Student</button>
+        <button class="button" onclick="location.href='school_login.html'">School</button>
+    </div>
+
+    <p class="register-link">Don't have an account? <a href="school_reg.html">Register now</a>.</p>
+</body>
+</html>
