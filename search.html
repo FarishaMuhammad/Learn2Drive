@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Drivin - Driving School Website</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="" name="keywords" />
+		<meta content="" name="description" />
+
+		<!-- Favicon -->
+		<link href="img/favicon.ico" rel="icon" />
+
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Icon Font Stylesheet -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Libraries Stylesheet -->
+		<link href="lib/animate/animate.min.css" rel="stylesheet" />
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Template Stylesheet -->
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+        
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Malaysia</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+06 123 4567</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0"><i class="fa fa-car text-primary me-2"></i>Learn2Drive</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="studentHp.html" class="nav-item nav-link active">Home</a>
+                <a href="progress.html" class="nav-item nav-link">Progress</a>
+                <a href="KPP.html" class="nav-item nav-link">KPP Questions</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="team.html" class="dropdown-item">Payment</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="Login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Log In<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+		<!-- Courses Start -->
+		<div class="container-xxl courses my-6 py-6 pb-0">
+			<div class="container">
+				<!-- Your course items go here -->
+				<div
+					class="text-center mx-auto mb-5 wow fadeInUp"
+					data-wow-delay="0.1s"
+					style="max-width: 500px"
+				>
+					<h1 class="display-6 mb-4">Choose Your Driving School</h1>
+				</div>
+				<!-- Filter Start -->
+				<div class="container-xxl filter my-6 py-6 pb-0">
+					<div class="container text-center">
+						<button class="btn active" onclick="filterCourses('all')">
+							All
+						</button>
+						<button class="btn" onclick="filterCourses('Selangor')">
+							Selangor
+						</button>
+						<button class="btn" onclick="filterCourses('Kedah')">Kedah</button>
+						<button class="btn" onclick="filterCourses('Sabah')">Sabah</button>
+						<button class="btn" onclick="filterCourses('Johor')">Johor</button>
+					</div>
+				</div>
+				<!-- Filter End -->
+				<div class="courses-container row g-4 justify-content-center">
+					<div class="courses-item col-lg-4 col-md-6 wow fadeInUp">
+						<div class="d-flex flex-column bg-white overflow-hidden h-100">
+							<div class="text-center p-4 pt-0">
+								<h5 class="mb-3">Rakan Ehsan Driving Academy</h5>
+								<p>
+									Lot 6125, Jalan Haji Abdul Manan, Off Jalan Meru, Selangor,
+									41050 Klang
+								</p>
+							</div>
+							<div class="position-relative mt-auto">
+								<img class="img-fluid" src="img/academy1.JPG" alt="Selangor" />
+								<div class="courses-overlay">
+									<a class="btn btn-outline-primary border-2" href="payment.html"
+										>Booking Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="courses-item col-lg-4 col-md-6 wow fadeInUp automatic"
+						data-wow-delay="0.1s"
+					>
+						<div class="d-flex flex-column bg-white overflow-hidden h-100">
+							<div class="text-center p-4 pt-0">
+								<h5 class="mb-3">Uji Niaga Academy</h5>
+								<p>
+									Jln Pandamaran Jaya, Kampung Sijangkang, 42000 Pelabuhan
+									Klang, Selangor
+								</p>
+							</div>
+							<div class="position-relative mt-auto">
+								<img class="img-fluid" src="img/academy2.JPG" alt="Selangor" />
+								<div class="courses-overlay">
+									<a class="btn btn-outline-primary border-2" href="payment.html"
+										>Booking Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="courses-item col-lg-4 col-md-6 wow fadeInUp automatic"
+						data-wow-delay="0.5s"
+					>
+						<div class="d-flex flex-column bg-white overflow-hidden h-100">
+							<div class="text-center p-4 pt-0">
+								<h5 class="mb-3">Pusat Memandu Pendang Sdn Bhd </h5>
+								<p>
+									Mukim Ayer Puteh, K147, Kilang Kecil, 06700 Pendang, Kedah
+								</p>
+							</div>
+							<div class="position-relative mt-auto">
+								<img class="img-fluid" src="img/academy3.JPG" alt="Kedah" />
+								<div class="courses-overlay">
+									<a class="btn btn-outline-primary border-2" href="payment.html"
+										>Booking Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div
+						class="courses-item col-lg-4 col-md-6 wow fadeInUp automatic"
+						data-wow-delay="0.5s"
+					>
+						<div class="d-flex flex-column bg-white overflow-hidden h-100">
+							<div class="text-center p-4 pt-0">
+								<h5 class="mb-3">Pusat Memandu Jesselton Sdn Bhd</h5>
+								<p>
+									Kg Labau, Manggatal, KM16, Jalan Tuaran, 88450 Kota Kinabalu, Sabah
+								</p>
+							</div>
+							<div class="position-relative mt-auto">
+								<img class="img-fluid" src="img\93197473_42TIc9cFmZLOeCzPB1uTOuix0JKOXAjgeRcu8Uz8tTo.jpg" alt="Sabah" />
+								<div class="courses-overlay">
+									<a class="btn btn-outline-primary border-2" href="payment.html"
+										>Booking Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div
+                    class="courses-item col-lg-4 col-md-6 wow fadeInUp automatic"
+                    data-wow-delay="0.5s"
+                >
+                    <div class="d-flex flex-column bg-white overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <h5 class="mb-3">Institut Memandu Riakar Sdn Bhd
+                            </h5>
+                            <p>
+                                Jalan Skudai Kiri Batu 41/2, Kampung Skudai Kiri, 81200 Johor Bahru, Johor
+                            </p>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img\download.png" alt="Sabah" />
+                            <div class="courses-overlay">
+                                <a class="btn btn-outline-primary border-2" href="payment.html"
+                                    >Booking Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				</div>
+			</div>
+		</div>
+		<!---Courses End -->
+
+		<!-- JavaScript Libraries -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			function filterCourses(category) {
+				var container = document.querySelector('.courses-container');
+				var items = document.querySelectorAll('.courses-item');
+
+				// Create an array to store the current state of items
+				var itemsArray = Array.from(items);
+
+				itemsArray.forEach(function (item) {
+					var paragraphText = item.querySelector('p').textContent.toLowerCase();
+
+					if (
+						category === 'all' ||
+						paragraphText.includes(category.toLowerCase())
+					) {
+						// Make the matching item visible
+						item.classList.remove('d-none');
+					} else {
+						// Hide the item
+						item.classList.add('d-none');
+					}
+				});
+
+				// Sort the items array to bring visible items to the front
+				itemsArray.sort(function (a, b) {
+					return (
+						b.classList.contains('d-none') + a.classList.contains('d-none')
+					);
+				});
+
+				// Remove existing items from the container
+				container.innerHTML = '';
+
+				// Append sorted and cloned items to the container
+				itemsArray.forEach(function (item) {
+					var clonedItem = item.cloneNode(true);
+					console.log(clonedItem);
+
+					container.appendChild(clonedItem);
+				});
+			}
+		</script>
+	</body>
+</html>
